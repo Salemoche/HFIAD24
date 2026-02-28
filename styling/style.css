@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Agrandir';
+  src: url('../assets/fonts/Agrandir-GrandHeavy.otf') format('opentype');
+  font-weight: 900;
+}
+
+/*=======================*
+ *  General Styles
+ *=======================*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  background-color: green;
+  font-size: 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.title {
+  margin-top: 0;
+  font-size: 24px;
+  font-family: 'Agrandir', sans-serif;
+}
+
+p {
+  margin: 0 0 16px 0;
+}
+
+.button {
+  background-color: #1C2070;
+  font-size: 18px;
+  color: #F8F3EB;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+  border-radius: 23px;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 0 16px 16px 16px;
+}
+
+.button_light {
+  background-color: #F8F3EB;
+  color: #1C2070;
+}
+
+/*=======================*
+ *  Element Styles
+ *=======================*/
+
+.title_dark_background {
+  color: #1C2070;
+}
+
+.title_light_background {
+  color: #F8F3EB;
+}
+
+.header-list div span{
+  color: purple;
+  background: grey;
+  padding: 10px;
+}
+
