@@ -119,3 +119,29 @@ header {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* Tourdates */
+
+.tourdates_container {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.tourdate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: green;
+    order: 1;
+}
+
+.tourdate_highlighted {
+    background: red;
+    /* grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4; */
+    order: 2;
+}
