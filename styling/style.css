@@ -5,6 +5,21 @@
 }
 
 /*=======================*
+ *  CSS Variables
+ *=======================*/
+
+:root {
+  --color-primary: #1C2070;
+  --color-light: #F8F3EB;
+  --color-green: green;
+  --color-red: red;
+  --color-blue: blue;
+  --color-purple: purple;
+  --color-grey: grey;
+  --abstand-klein: 16px;
+}
+
+/*=======================*
  *  General Styles
  *=======================*/
 
@@ -17,7 +32,7 @@ body {
 }
 
 h1 {
-  background-color: green;
+  background-color: var(--color-green);
   font-size: 32px;
 }
 
@@ -37,9 +52,8 @@ p {
 }
 
 .button {
-  background-color: #1C2070;
   font-size: 18px;
-  color: #F8F3EB;
+  color: var(--color-light);
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 10.5px;
@@ -53,14 +67,22 @@ p {
 }
 
 .button_light {
-  background-color: #F8F3EB;
-  color: #1C2070;
+  background-color: var(--color-light);
+  color: var(--color-primary);
 }
 
 img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+/*=======================*
+ *  Uitility Classes
+ *=======================*/
+.background-dark {
+  background-color: var(--color-primary);
+  color: var(--color-light);
 }
 
 /*=======================*
@@ -72,8 +94,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #1C2070;
-  color: #F8F3EB;
+  background-color: var(--color-primary);
+  color: var(--color-light);
   padding: 48.5px;
 }
 
@@ -84,16 +106,16 @@ header {
 }
 
 .title_dark_background {
-  color: #1C2070;
+  color: var(--color-primary);
 }
 
 .title_light_background {
-  color: #F8F3EB;
+  color: var(--color-light);
 }
 
 .header-list div span{
-  color: purple;
-  background: grey;
+  color: var(--color-purple);
+  background: var(--color-grey);
   padding: 10px;
 }
 
@@ -134,14 +156,26 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: green;
+    background: var(--color-green);
     order: 1;
 }
 
 .tourdate_highlighted {
-    background: red;
+    background: var(--color-red);
     /* grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 4; */
     order: 2;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .tourdate_highlighted {
+    background: var(--color-blue);
+  }
+
+  .tourdates_container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
