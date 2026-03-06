@@ -57,9 +57,31 @@ p {
   color: #1C2070;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 /*=======================*
  *  Element Styles
  *=======================*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1C2070;
+  color: #F8F3EB;
+  padding: 48.5px;
+}
+
+.header-list {
+  display: flex;
+  gap: 16px;
+  justify-content: space-around;
+}
 
 .title_dark_background {
   color: #1C2070;
@@ -75,3 +97,25 @@ p {
   padding: 10px;
 }
 
+.hero_text {
+  margin: 0 auto;
+  max-width: 400px;
+  position: relative;
+}
+
+.hero_text h1 {
+  position: absolute;
+  top: 0;
+}
+
+.hero_bild {
+  height: 50vh;
+}
+
+.albums_container {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
