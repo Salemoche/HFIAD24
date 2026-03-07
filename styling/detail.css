@@ -9,6 +9,11 @@
 /*=======================*
 *  General
 *=======================*/
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Pangram', sans-serif;
 }
@@ -38,6 +43,16 @@ section {
   padding: var(--spacing-l);
   background-color: var(--color-theme-3);
   color: var(--color-light);
+
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section > h2, section > h3 {
+  width: 100%;
 }
 
 section:nth-child(odd) {
@@ -59,8 +74,9 @@ section:nth-child(odd) {
 .container {
   margin-bottom: var(--spacing-l);
   border: 3px solid var(--color-light);
-  padding: var(--spacing-m);
+  padding: var(--spacing-l);
   border-radius: var(--spacing-s);
+  width: 100%;
 }
 
 .flex {
@@ -254,6 +270,30 @@ header li a {
 .animation-bounce {
   animation: bounce 1s ease-in-out infinite;
 }
+
+.jquery {
+  row-gap: var(--spacing-xl);
+  align-items: center;
+  justify-items: center;
+}
+.jquery .trigger {
+  grid-column: 2 / 4;
+}
+
+.jquery .target {
+  grid-column: 8 / 10;
+  aspect-ratio: 1/1;
+}
+
+.jquery .target {
+  /* transition: all 1s ease; */
+}
+
+#target-1.active {
+  background-color: var(--color-theme-1);
+  transform: scale(1.5);
+}
+
 
 
 /*=======================*
