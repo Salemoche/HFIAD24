@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="../styling/style.css" />
+    <link rel="stylesheet" href="../styling/detail.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Malia</a></li>
+          <li><a href="/detail/layout.html">Layout</a></li>
+          <li><a href="/detail/medien.html">Medien</a></li>
+          <li><a href="/detail/animation.html">Animation</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>CSS States & Transitions</h2>
+        <div class="container flex css-states">
+          <button>Keine Transition</button>
+          <button class="transition-regular">Reguläre Transition</button>
+          <button class="transition-delayed">Verzögerte Transition</button>
+          <div class="box hover-trigger">
+            <div class="box-inner transition-regular"></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>CSS Animations</h2>
+        <div class="container flex css-animations">
+          <div class="box animation-rotate"></div>
+          <div class="box animation-pulse"></div>
+          <div class="box animation-bounce"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
