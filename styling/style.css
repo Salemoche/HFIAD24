@@ -4,6 +4,12 @@
   font-weight: 900;
 }
 
+@font-face {
+  font-family: 'Pangram';
+  src: url('../assets/fonts/Pangram-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
 /*=======================*
  *  CSS Variables
  *=======================*/
@@ -29,6 +35,9 @@
   --spacing-l: 32px;
   --spacing-xl: 64px;
 
+  --font-size-s: 14px;
+  --font-size-m: 18px;
+  --font-size-l: 24px;
 }
 
 /*=======================*
@@ -95,6 +104,18 @@ img {
 .background-dark {
   background-color: var(--color-primary);
   color: var(--color-light);
+}
+
+.font-size-l {
+  font-size: var(--font-size-l);
+}
+
+.font-size-m {
+  font-size: var(--font-size-m);
+}
+
+.font-size-s {
+  font-size: var(--font-size-s);
 }
 
 /*=======================*
