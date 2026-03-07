@@ -13,6 +13,10 @@ html {
   font-family: 'Pangram', sans-serif;
 }
 
+main {
+  padding-top: 80px;
+}
+
 h2 {
   font-size: var(--font-size-l);
   margin-bottom: var(--spacing-s);
@@ -60,6 +64,7 @@ section:nth-child(odd) {
   display: flex;
   gap: var(--spacing-m);
   flex-wrap: wrap; /* allows items to wrap to the next line if they exceed the container width */
+  justify-content: space-between;
 }
 
 .grid {
@@ -75,6 +80,55 @@ section:nth-child(odd) {
   justify-items: center; */
 }
 
+.grid .box {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto; 
+}
+
+/*=======================*
+*  Elements
+*=======================*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-theme-1);
+  padding: var(--spacing-m);
+  z-index: 1000;
+}
+
+header ul {
+  display: flex;
+  gap: var(--spacing-m);
+  flex-wrap: wrap;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header li a {
+  color: var(--color-theme-3);
+  font-size: var(--font-size-m);
+  text-decoration: none;
+}
+
+/*=======================*
+*  Detail
+*=======================*/
+.container_overflow {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.container_overflow .box {
+  display: inline-flex; 
+  width: 25vw;
+}
+
 
 /*=======================*
 *  Responsive
@@ -87,5 +141,11 @@ section:nth-child(odd) {
 
   .grid {
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .grid .box {
+    grid-column: span 3;
+    width: auto;
   }
 }
