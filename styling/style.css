@@ -16,7 +16,19 @@
   --color-blue: blue;
   --color-purple: purple;
   --color-grey: grey;
-  --abstand-klein: 16px;
+  --color-orange-a: #fb4c004f;
+  --color-green-a: #00ffb84a;
+  --color-theme-1: #F1C2F2;
+  --color-theme-2: #C291F2;
+  --color-theme-3: #564D8C;
+  --color-theme-4: #57AAF2;
+  --color-theme-5: #A0D9D9;
+
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 32px;
+  --spacing-xl: 64px;
+
 }
 
 /*=======================*

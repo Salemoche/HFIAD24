@@ -1,0 +1,78 @@
+/*=======================*
+ *  Debugging
+ *=======================*/
+
+/* * {
+  border: 1px solid red;
+} */
+
+/*=======================*
+*  General
+*=======================*/
+
+h2 {
+  font-size: 28px;
+}
+
+section {
+  padding-bottom: var(--spacing-l);
+  padding: var(--spacing-m);
+  background-color: var(--color-theme-3);
+  color: var(--color-light);
+}
+
+section:nth-child(odd) {
+  background-color: var(--color-theme-2);
+}
+
+.box {
+  aspect-ratio: 1/1;
+  width: 10vw;
+  background: var(--color-light);
+  color: var(--color-theme-3);
+  border-radius: var(--spacing-s);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Agrandir', sans-serif;
+}
+
+.container {
+  margin-bottom: var(--spacing-l);
+}
+
+.flex, .grid {
+  border: 3px solid var(--color-light);
+  padding: var(--spacing-m);
+  border-radius: var(--spacing-s);
+}
+
+.flex {
+  display: flex;
+  gap: var(--spacing-m);
+  flex-wrap: wrap; /* allows items to wrap to the next line if they exceed the container width */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-m);
+}
+
+.grid_special {
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
+  /* align-items: center;
+  justify-items: center; */
+}
+
+
+/*=======================*
+*  Responsive
+*=======================*/
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: 20vw;
+  } 
+}
