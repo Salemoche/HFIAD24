@@ -140,6 +140,16 @@ header {
   background-color: var(--color-theme-1);
   padding: var(--spacing-m);
   z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .burger-icon {
+  width: 30px;
+  height: 30px;
+  display: none;
+  transition: all 0.3s ease;
 }
 
 header ul {
@@ -321,6 +331,10 @@ header li a {
 *=======================*/
 
 @media screen and (max-width: 768px) {
+  main {
+    padding-top: 60px;
+  }
+
   .box {
     width: 20vw;
   } 
@@ -333,6 +347,46 @@ header li a {
   .grid .box {
     grid-column: span 3;
     width: auto;
+  }
+
+  /* Navigation */
+
+  header {
+    justify-content: flex-end;
+    height: 60px;
+  }
+
+  header .burger-icon {
+    display: block;
+  }
+
+  header .burger-icon.active {
+    transform: rotate(45deg);
+  }
+
+  nav {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-theme-1);
+    padding: var(--spacing-m);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: var(--spacing-l);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  nav.active {
+    opacity: 1;
+    top: 100%;
   }
 }
 

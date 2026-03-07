@@ -5,6 +5,19 @@ $(document).ready(function() {
 });
 
 /*=======================*
+ *  Menu
+ *=======================*/
+
+$('.burger-icon').click(function() {
+  $(this).toggleClass('active');
+  $('nav').toggleClass('active');
+
+  document.documentElement.style.setProperty('--burger-color', 
+    getComputedStyle(document.documentElement).getPropertyValue('--burger-color') === '#564D8C' ? '#A0D9D9' : '#564D8C'
+  );
+});
+
+/*=======================*
  *  Swiper Slider
  *=======================*/
 
