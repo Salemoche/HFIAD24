@@ -27,6 +27,12 @@ h3 {
   font-family: 'Pangram', sans-serif;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 section {
   padding-bottom: var(--spacing-l);
   padding: var(--spacing-l);
@@ -127,6 +133,39 @@ header li a {
 .container_overflow .box {
   display: inline-flex; 
   width: 25vw;
+}
+
+.image_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--spacing-s);
+  border-radius: var(--spacing-s);
+  width: 25vw;
+}
+
+.image_container p {
+  margin-bottom: 0;
+}
+
+.image_container.contain img {
+  object-fit: contain;
+}
+
+.image_container.repeat .image {
+  background-image: url('../assets/img/pattern_hypnotic.jpeg');
+  /* background-position-y: 0%;
+  background-size: 100% auto; */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image {
+  border-radius: var(--spacing-l);
+  aspect-ratio: 1/1;
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid var(--color-light);
 }
 
 

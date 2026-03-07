@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="../styling/style.css" />
+    <link rel="stylesheet" href="../styling/detail.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Malia</a></li>
+          <li><a href="/detail/layout.html">Layout</a></li>
+          <li><a href="/detail/medien.html">Medien</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Bilder</h2>
+        <h3>Darstellung von Bildern in einem flexiblen Layout mit verschiedenen Display Optionen</h3>
+        <div class="container flex">
+          <div class="image_container">
+            <div class="image_title">
+              <p>Object-fit Cover</p>
+            </div>
+            <div class="image">
+              <img src="../assets/img/mountain_kajak.jpg" alt="">
+            </div>
+          </div>
+          <div class="image_container contain">
+            <div class="image_title">
+              <p>Object-fit Contain</p>
+            </div>
+            <div class="image">
+              <img src="../assets/img/mountain_kajak.jpg" alt="">
+            </div>
+          </div>
+          <div class="image_container repeat">
+            <div class="image_title">
+              <p>Background Repeat</p>
+            </div>
+            <div class="image">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
