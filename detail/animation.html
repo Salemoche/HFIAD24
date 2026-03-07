@@ -6,6 +6,7 @@
     <title>Layout</title>
     <link rel="stylesheet" href="../styling/style.css" />
     <link rel="stylesheet" href="../styling/detail.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   </head>
   <body>
     <header>
@@ -49,8 +50,45 @@
           <div class="box target" id="target-3">Target</div> -->
         </div>
       </section>
+      <section>
+        <h2>Libraries: Swiper</h2>
+        <div class="container swiper-container">
+          <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="box-container">
+                <div class="box">Box 1</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box-container">
+                <div class="box">Box 2</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box-container">
+                <div class="box">Box 3</div>
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+        </div>
+      </section>
     </main>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="../scripts/script.js"></script>
 </html>
